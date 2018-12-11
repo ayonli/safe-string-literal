@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Escapes and Unescapes strings into safe literals.",
   "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.12.12",
