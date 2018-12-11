@@ -17,8 +17,9 @@ setting `excludes` option):
 - `\u2028`
 - `\u2029`
 
-The escaped strings are very alike the strings that `JSON.stringify` produces, 
-but with support of extra characters <code>\`</code>, `\u2089` and `\u2029`.
+The escaped strings are very alike with the strings that `JSON.stringify` 
+produces, but with support of extra characters <code>\`</code>, `\u2089` and 
+`\u2029`.
 
 ## API
 
