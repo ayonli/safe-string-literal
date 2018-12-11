@@ -1,0 +1,31 @@
+{
+  "name": "safe-string-literal",
+  "version": "1.0.0",
+  "description": "Escapes and Unescapes strings into safe literals.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyurl/safe-string-literal.git"
+  },
+  "keywords": [
+    "string",
+    "literal",
+    "escape",
+    "unescape",
+    "json"
+  ],
+  "author": "Ayon Lee <i@hyurl.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyurl/safe-string-literal/issues"
+  },
+  "homepage": "https://github.com/hyurl/safe-string-literal#readme"
+}
