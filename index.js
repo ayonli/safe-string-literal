@@ -44,7 +44,7 @@ function unescape(str) {
             case "\\'":
             case "\\`":
             case "\\\\":
-                return chars.slice(1);
+                return chars[1];
             case "\\b":
                 return "\b";
             case "\\f":
