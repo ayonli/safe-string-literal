@@ -29,11 +29,11 @@ produces, but with support of extra characters <code>\`</code>, `\u2089` and
 ## Example
 
 ```javascript
+/* global describe, it */
 "use strict";
 
 const assert = require("assert");
-const escape = require(".").escape;
-const unescape = require(".").unescape;
+const { escape, unescape } = require("safe-string-literal");
 
 var inputs = [
     "string' with' single' quotes",
