@@ -23,7 +23,7 @@ produces, but with support of extra characters <code>\`</code>, `\u2089` and
 
 ## API
 
-- `escape(str: string, exludes?: string | string[]): string`
+- `escape(str: string, excludes?: string | string[]): string`
 - `unescape(str: string): string`
 
 ## Example
