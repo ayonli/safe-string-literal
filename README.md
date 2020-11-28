@@ -21,12 +21,28 @@ The escaped strings are very alike with the strings that `JSON.stringify`
 produces, but with support of extra characters <code>\`</code>, `\u2089` and 
 `\u2029`.
 
+## Install
+
+### Node.js
+
+```sh
+npm i safe-string-literal
+```
+
+### Deno
+
+```ts
+import { escape, unescape } from "https://deno.land/x/safe_string_literal/index.js";
+// Or
+import { escape, unescape } from "https://gtihub.com/hyurl/safe-string-literal/raw/master/index.js";
+```
+
 ## API
 
 - `escape(str: string, excludes?: string | string[]): string`
 - `unescape(str: string): string`
 
-## Example
+## Example (Node.js)
 
 ```javascript
 /* global describe, it */

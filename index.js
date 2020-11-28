@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-
 /**
  * @param {string} str 
  * @param {string|string[]} excludes 
  */
-function escape(str, excludes) {
+export function escape(str, excludes) {
     return String(str).replace(/["'`\\\b\f\n\r\t\u2028\u2029]/g, function (char) {
         if (excludes && excludes.indexOf(char) >= 0)
             return char;
@@ -37,7 +34,7 @@ function escape(str, excludes) {
 /**
  * @param {string} str 
  */
-function unescape(str) {
+export function unescape(str) {
     return String(str).replace(/\\["'`\\bfnrt]|\\u2028|\\u2029/g, function (chars) {
         switch (chars) {
             case '\\"':
@@ -62,6 +59,3 @@ function unescape(str) {
         }
     });
 }
-
-exports.escape = escape;
-exports.unescape = unescape;

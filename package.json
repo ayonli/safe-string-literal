@@ -1,15 +1,20 @@
 {
   "name": "safe-string-literal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Escapes and Unescapes strings into safe literals.",
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^10.12.12",
+    "@babel/preset-env": "^7.12.7",
+    "@types/node": "^14.14.10",
     "mocha": "^5.2.0"
   },
   "scripts": {
+    "prepublishOnly": "npm run pretest",
+    "postpublish": "npm run posttest",
+    "pretest": "npm link @babel/core && mv index.js index.mjs && babel --presets @babel/env -o index.js index.mjs",
+    "posttest": "mv index.mjs index.js",
     "test": "mocha"
   },
   "repository": {
