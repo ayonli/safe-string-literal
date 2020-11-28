@@ -1,6 +1,6 @@
 {
   "name": "safe-string-literal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Escapes and Unescapes strings into safe literals.",
   "main": "index.js",
   "types": "index.d.ts",
