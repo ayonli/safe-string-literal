@@ -2,7 +2,7 @@
  * @param {string} str 
  * @param {string|string[]} excludes 
  */
-export function escape(str, excludes) {
+export function escape(str, excludes = void 0) {
     return String(str).replace(/["'`\\\b\f\n\r\t\u2028\u2029]/g, function (char) {
         if (excludes && excludes.indexOf(char) >= 0)
             return char;
